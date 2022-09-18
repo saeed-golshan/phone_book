@@ -5,7 +5,7 @@ import 'package:phone_book/src/data/constant.dart';
 
 part 'contact_service.chopper.dart';
 
-@ChopperApi(baseUrl: '/contacts')
+@ChopperApi(baseUrl: contactPrefix)
 abstract class ContactService extends ChopperService {
   @Get(headers: {'x-apikey': apiKey})
   Future<Response> getContacts();
@@ -24,7 +24,7 @@ abstract class ContactService extends ChopperService {
 
   static ContactService create() {
     final client = ChopperClient(
-        baseUrl: 'https://contacts-df29.restdb.io/rest',
+        baseUrl: serverAddress,
         services: [_$ContactService()],
         converter: const JsonConverter());
     return _$ContactService(client);

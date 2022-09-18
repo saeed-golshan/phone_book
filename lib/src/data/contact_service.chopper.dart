@@ -18,9 +18,9 @@ class _$ContactService extends ContactService {
 
   @override
   Future<Response<dynamic>> getContacts() {
-    final $url = '/contacts';
+    final $url = '/rest/contacts';
     final $headers = {
-      'x-apikey': '62e3e6d11894fe7edea71921',
+      'x-apikey': '660094b3fb56a22799b1bfdeb87a2cfce1a02',
     };
 
     final $request = Request(
@@ -34,9 +34,9 @@ class _$ContactService extends ContactService {
 
   @override
   Future<Response<dynamic>> getContact(String id) {
-    final $url = '/contacts/${id}';
+    final $url = '/rest/contacts/${id}';
     final $headers = {
-      'x-apikey': '62e3e6d11894fe7edea71921',
+      'x-apikey': '660094b3fb56a22799b1bfdeb87a2cfce1a02',
     };
 
     final $request = Request(
@@ -50,9 +50,9 @@ class _$ContactService extends ContactService {
 
   @override
   Future<Response<dynamic>> putContact(String id) {
-    final $url = '/contacts/${id}';
+    final $url = '/rest/contacts/${id}';
     final $headers = {
-      'x-apikey': '62e3e6d11894fe7edea71921',
+      'x-apikey': '660094b3fb56a22799b1bfdeb87a2cfce1a02',
     };
 
     final $request = Request(
@@ -66,9 +66,9 @@ class _$ContactService extends ContactService {
 
   @override
   Future<Response<dynamic>> deleteContact(String id) {
-    final $url = '/contacts/${id}';
+    final $url = '/rest/contacts/${id}';
     final $headers = {
-      'x-apikey': '62e3e6d11894fe7edea71921',
+      'x-apikey': '660094b3fb56a22799b1bfdeb87a2cfce1a02',
     };
 
     final $request = Request(
@@ -82,9 +82,9 @@ class _$ContactService extends ContactService {
 
   @override
   Future<Response<dynamic>> postContact(Map<String, dynamic> body) {
-    final $url = '/contacts';
+    final $url = '/rest/contacts';
     final $headers = {
-      'x-apikey': '62e3e6d11894fe7edea71921',
+      'x-apikey': '660094b3fb56a22799b1bfdeb87a2cfce1a02',
     };
 
     final $body = body;
